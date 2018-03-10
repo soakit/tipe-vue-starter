@@ -1,8 +1,15 @@
 {
   "name": "nuxt-tipe-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get started with Tipe + Nuxt + Vue",
-  "author": "Scott Moss <scott@tipe.io>",
+  "contributors": [
+    "PatrickJS <patrick@tipe.io>",
+    "Scott Moss <scott@tipe.io>",
+    "Mike Moss <mike@tipe.io>"
+  ],
+  "engines": {
+    "node" : ">=8"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",
