@@ -11,6 +11,7 @@
     "node" : ">=8"
   },
   "private": true,
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
