@@ -73,15 +73,13 @@ export default {
     tweet: Object
   },
   mounted () {
-    window.twttr.widgets.createShareButton(
-      '/',
-      this.$refs.twitter,
-      {
+    window.twttr.ready(function(twttr) {
+      twttr.widgets.createShareButton('/', this.$refs.twitter, {
         text: this.tweet.message,
         url: this.tweet.url,
-        hashtags: this.tweet.hashtags
-      }
-    )
+        hashtags: this.tweet.hashtags,
+      });
+    });
   }
 }
 </script>
